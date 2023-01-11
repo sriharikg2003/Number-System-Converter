@@ -1,0 +1,83 @@
+<!-- Author : Srihari K G -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Number System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Number System Converter</h1>
+    </center>
+    <div class="contaier">
+
+        <div class="left">
+
+            <div class="boxes">
+                <p>Decimal</p>
+
+                <input class="deci" type="text" required>
+
+
+                <button onclick="deci()">CONVERT</button>
+            </div>
+
+
+            <div class="boxes">
+                <p> Binary</p>
+
+                <input class="base2" type="text" required>
+
+                <button onclick="callfunc(2)">CONVERT</button>
+
+            </div>
+
+            <div class="boxes">
+                <p> Hexadecimal</p>
+
+                <input class="base16" type="text" required>
+
+
+                <button onclick="callfunc(16)">CONVERT</button>
+            </div>
+
+
+
+            <div class="boxes">
+                <p> Octal</p>
+
+                <input class="base8" type="text" required>
+
+
+                <button onclick="callfunc(8)">CONVERT</button>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <p class="output">
+                Answer
+                <br>
+                Will be Displayed Here
+                <br>
+                <br>
+                <br>
+                Refresh to Reset
+            </p>
+            <button onclick="location.reload();" class="btn">RESET</button>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="num.js"></script>
+
+</html>
